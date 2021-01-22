@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title> Sitio Web Northside Youth Soccer League</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--estilos-->
+        <Link rel="stylesheet" href="Estilos/registration_nysl3.css" type="text/css">
+            <!--iconos-->
+        <link rel="stylesheet" href="Estilos/fontello.css" type="text/css">
+
+  </head> 
+
+  <body>
+      <!--iconos redes sociales-->
+        <div class="redes">
+           <ul>
+          <li><a class="icon-soccer-ball"></a></li>      
+          <li><a class="icon-facebook-squared"></a></li>
+          <li><a class="icon-instagram"></a></li>
+          <li><a class="icon-mail-alt"></a></li> 
+          </ul> 
+        </div>
+                 
+      <!--imagen principal/Banner-->
+      <header>
+          <div class="caja1">
+              <img src="ASSETS/design1_image1.jpg" alt=banner id="banner">
+              <h1 class="cliente">NORTHSIDE YOUTH SOCCER LEAGUE</h1>
+              </div> 
+      </header>
+
+      <nav class="caja2">
+        <h2 class="name">Registration Form</h2>   
+        <img src="assets/nysl_logo.png" alt="nysl_logo" id="logo">      
+      </nav>
+  
+      <!--texto Registration-->
+      <article>
+        <div class="form">
+          <form action="/showdata.html" method="GET">
+             <!-- info personal-->
+             <h3>Personal Information</h3>
+             <label for="pname:"></label>
+             <input class="controles" type="text" id="pname" name="pname" placeholder="Player Name" required>
+
+             <label for="lname"></label>
+             <input class="controles" type="text" id="lname" name="lname" placeholder="Last Name" required>
+             <br>
+             <label for="adress"></label>
+             <input class="controles" type="Adress" id="adress" name="adress" placeholder="Adress" required>
+
+             <label for="city"></label>
+             <input class="controles" type="text" id="city" name="city" placeholder="City" required>
+             <br>
+             <label for="pcode"></label>
+             <input class="controles" type="number" maxlength="8" id="pcode" name=pcode placeholder="Postal Code" required>
+
+             <label for="birthday"></label>
+             <input class="controles" type="date" id="birthday" name="birthday" placeholder="Birthdate" required>
+             <br>
+             <br>
+             <label><h5>Gender:</h5></label>
+             <input class="botones" type="radio" name="boton" value="gender"> Female 
+             <input class="botones" type="radio" name="boton" value="gender"> Male
+             <input class="botones" type="radio" name="boton" value="gender"> Other
+             <br>
+             <br>
+             <label><h5>Grade:</h5></label>
+             <input class="botones" type="radio" name="boton2" value="Preschool"> Preschool
+             <input class="botones" type="radio" name="boton2" value="1"> 1
+             <input class="botones" type="radio" name="boton2" value="2"> 2
+             <input class="botones" type="radio" name="boton2" value="3"> 3
+             <input class="botones" type="radio" name="boton2" value="4"> 4
+             <input class="botones" type="radio" name="boton2" value="5"> 5
+
+             <!-- info colegio-->
+             <h4>Which is the nearest school to you?</h4>
+             <label >Nearest School:</label>
+             <select>
+               <option class="controles" value="SE"selected>Select</option>
+               <option class="controles" value="AJ">AJ Katzenmaier</option>
+               <option class="controles" value="GR">Greenbay</option>
+               <option class="controles" value="HO">Howard A. Yeager</option>
+               <option class="controles" value="MA">Marjorie P. Hart</option>
+               <option class="controles" value="NO">North Elemtary</option>
+               <option class="controles" value="SU">South Elemtary</option>
+             </select>
+
+             <!-- info posición de juego-->
+             <h4>What position(s) do you normally play? (check all that apply)</h4>
+               <input class="botones" type="radio" value="1"> Forward
+               <input class="botones" type="radio" value="2"> Midfield
+               <input class="botones" type="radio" value="3"> Goalkeeper
+               <input class="botones" type="radio" value="4"> Defense
+
+             <!-- info uniforme-->
+             <h4>Uniform Size</h4>
+               <input class="botones" type="radio" name="boton3" value="1"> Small Size
+               <input class="botones" type="radio" name="boton3" value="2"> Medium Size
+               <input class="botones" type="radio" name="boton3" value="3"> Large Size
+               <input class="botones" type="radio" name="boton3" value="4"> Extra-Large Size
+
+             <!-- info tutor-->
+             <div class="permiso">
+             <h4>Permission to play</h4>
+              <p><em>I, the parent or guardian of the minor registrant, agree that the registrant and
+              I will abide by all the rules of the Northside Youth Soccer League (NYSL). By recognizing the possibility
+              of physical injuries associated with football and in consideration of the "League" that accepts the registrant
+              for its soccer programs and activities, I hereby release and discharge NYSL, its employees and
+              associated staff and volunteers, including facilities used for practices and games, against
+              any claim by or on behalf of the registrant as a result of the participation of the
+              Program applicant to or on transportation to or from NYSL sponsored activities.
+              </em></p>
+            
+             <input type="checkbox" id="terms" name="terms" value="" required/>
+             <label for="terms">By entering your details below, you agree and authorize permission to play. You also acknowledge that you have read the cancellation policy and accept its terms.</label>
+             <br>
+             <br>
+             <label for="date:"></label>
+             <input class="controles" type="date" id="date" name="date" placeholder="Date" required/>
+             <label for="tname:"></label>
+             <input class="controles" type="text" id="tname" name="tname" placeholder="Name" required/> 
+             <label for="email:"></label>
+             <input class="controles" type="email" id="email" name="email" placeholder="Email" required/> 
+             <label for="pnumber:"></label>
+             <input class="controles" type="text"  id="pnumber" name="pnumber" placeholder="(+56)" maxlength="12" required/> 
+             </div>
+             <button class="ejecutor" type="submit" class="submit">Send</button>
+             <button class="ejecutor" type="reset" class="submit">Reset</button>
+          </form> 
+        </div>
+      </article>
+ 
+      <!--Menú bar desplegable-->
+        <section>
+          <div class="menu">
+            <ul>
+              <li><a href="home3.html">Home</a></li>
+              <li><a href="about3.html">About NYSL</a></li>
+              <li><a href="contact3.html">Contact</a></li>
+              <li><a href="rules3.html">Game Rules and Policies</a></li>
+              <li><a href="game3.html">Game Information</a></li>
+              <li><a href="Registration3.html">Registration Form</a></li>
+            </ul>
+          </div>
+        </section>
+
+  </body>
+  <br>       
+  <hr>
+  <footer class="pie"><i>© NDesign'Studio 2021 Todos los derechos reservados</i></footer>
+</html>
